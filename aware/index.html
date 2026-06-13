@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AWARE — Yerba Mate Orgánica</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#inicio" class="nav-logo">AWARE</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#inicio" class="nav-link">Inicio</a></li>
+        <li><a href="#productos" class="nav-link">Productos</a></li>
+        <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+        <li><a href="#contacto" class="nav-link">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="hero-content">
+      <span class="hero-eyebrow">Yerba Mate Orgánica</span>
+      <h1 class="hero-title">AWARE</h1>
+      <p class="hero-slogan">Cada buen día empieza con consciencia.</p>
+      <div class="hero-actions">
+        <a href="#productos" class="btn btn-primary">Conocé nuestros productos</a>
+        <a href="#nosotros" class="btn btn-outline">Nuestra historia</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scrolleá</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- FRANJA DE VALORES -->
+  <div class="valores-strip">
+    <div class="valores-container">
+      <div class="valor-item"><span class="valor-icon">🌿</span><span>100% Orgánica</span></div>
+      <div class="valor-divider"></div>
+      <div class="valor-item"><span class="valor-icon">🧉</span><span>Cosecha Artesanal</span></div>
+      <div class="valor-divider"></div>
+      <div class="valor-item"><span class="valor-icon">🌍</span><span>Producción Consciente</span></div>
+      <div class="valor-divider"></div>
+      <div class="valor-item"><span class="valor-icon">✨</span><span>Sin Aditivos</span></div>
+    </div>
+  </div>
+
+  <!-- PRODUCTOS -->
+  <section class="productos" id="productos">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-eyebrow">Lo que hacemos</span>
+        <h2 class="section-title">Nuestros Productos</h2>
+        <p class="section-subtitle">Cada producto es una invitación a estar presente.<br>Tocá cualquier producto para consultar por WhatsApp.</p>
+      </div>
+
+      <div class="categoria">
+        <h3 class="categoria-titulo">Yerba Mate</h3>
+        <div class="productos-grid">
+          <div class="producto-card" onclick="consultarWsp('Yerba Mate Clásica Orgánica')">
+            <div class="producto-img ph-verde"><span>🧉</span></div>
+            <div class="producto-info"><h4>Clásica Orgánica</h4><p>La yerba de siempre, cultivada con respeto por la tierra. Sabor equilibrado, cuerpo lleno.</p><span class="btn-wsp">Consultar →</span></div>
+          </div>
+          <div class="producto-card" onclick="consultarWsp('Yerba Mate Suave Orgánica')">
+            <div class="producto-img ph-kraft"><span>🌾</span></div>
+            <div class="producto-info"><h4>Suave Orgánica</h4><p>Ideal para los que prefieren un mate más suave. Sin palo, sin apuros, puro sabor.</p><span class="btn-wsp">Consultar →</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="categoria">
+        <h3 class="categoria-titulo">Tés</h3>
+        <div class="productos-grid">
+          <div class="producto-card" onclick="consultarWsp('Té Verde Orgánico')">
+            <div class="producto-img ph-verde-claro"><span>🍃</span></div>
+            <div class="producto-info"><h4>Té Verde Orgánico</h4><p>Delicado y lleno de antioxidantes. Perfecto para empezar el día con calma.</p><span class="btn-wsp">Consultar →</span></div>
+          </div>
+          <div class="producto-card" onclick="consultarWsp('Té Negro Orgánico')">
+            <div class="producto-img ph-oscuro"><span>🫖</span></div>
+            <div class="producto-info"><h4>Té Negro Orgánico</h4><p>Intenso y aromático. Para los que necesitan un empuje con elegancia.</p><span class="btn-wsp">Consultar →</span></div>
+          </div>
+          <div class="producto-card" onclick="consultarWsp('Té de Hierbas Orgánico')">
+            <div class="producto-img ph-amarillo"><span>🌸</span></div>
+            <div class="producto-info"><h4>Té de Hierbas</h4><p>Una mezcla reconfortante de hierbas orgánicas para cualquier momento del día.</p><span class="btn-wsp">Consultar →</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="categoria">
+        <h3 class="categoria-titulo">Blends</h3>
+        <div class="productos-grid">
+          <div class="producto-card" onclick="consultarWsp('Blend Energizante AWARE')">
+            <div class="producto-img ph-verde"><span>⚡</span></div>
+            <div class="producto-info"><h4>Blend Energizante</h4><p>Yerba mate con guaraná y jengibre. Energía natural para cuando más lo necesitás.</p><span class="btn-wsp">Consultar →</span></div>
+          </div>
+          <div class="producto-card" onclick="consultarWsp('Blend Relax AWARE')">
+            <div class="producto-img ph-kraft"><span>🌙</span></div>
+            <div class="producto-info"><h4>Blend Relax</h4><p>Yerba mate con lavanda y manzanilla. Un mate para el cierre del día.</p><span class="btn-wsp">Consultar →</span></div>
+          </div>
+          <div class="producto-card" onclick="consultarWsp('Blend Cítrico AWARE')">
+            <div class="producto-img ph-amarillo"><span>🍋</span></div>
+            <div class="producto-info"><h4>Blend Cítrico</h4><p>Con cáscara de naranja y limón. Fresco, liviano y lleno de vitamina C natural.</p><span class="btn-wsp">Consultar →</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="categoria">
+        <h3 class="categoria-titulo">Yuyos Saborizantes</h3>
+        <div class="productos-grid">
+          <div class="producto-card" onclick="consultarWsp('Yuyo Menta Peperina')">
+            <div class="producto-img ph-verde-claro"><span>🌿</span></div>
+            <div class="producto-info"><h4>Menta Peperina</h4><p>El clásico refrescante del norte argentino. Dale un twist a tu mate de siempre.</p><span class="btn-wsp">Consultar →</span></div>
+          </div>
+          <div class="producto-card" onclick="consultarWsp('Yuyo Cedrón')">
+            <div class="producto-img ph-verde"><span>🍀</span></div>
+            <div class="producto-info"><h4>Cedrón</h4><p>Suave y cítrico. Ayuda a la digestión y aporta calma al momento del mate.</p><span class="btn-wsp">Consultar →</span></div>
+          </div>
+          <div class="producto-card" onclick="consultarWsp('Yuyo Burrito')">
+            <div class="producto-img ph-kraft"><span>🌱</span></div>
+            <div class="producto-info"><h4>Burrito</h4><p>Un yuyo bien criollo con aroma intenso. Tradición en cada sorbo.</p><span class="btn-wsp">Consultar →</span></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- NOSOTROS -->
+  <section class="nosotros" id="nosotros">
+    <div class="nosotros-container">
+      <div class="nosotros-imagen">
+        <div class="nosotros-img-placeholder"><span>🌱</span></div>
+      </div>
+      <div class="nosotros-texto">
+        <span class="section-eyebrow">Nuestra historia</span>
+        <h2 class="section-title">Ser consciente<br/>en cada sorbo</h2>
+        <p>AWARE nació de la convicción de que lo que consumimos importa. No solo para nosotros, sino para la tierra que lo produce y las personas que lo cosechan.</p>
+        <p>Trabajamos con productores orgánicos certificados, que cuidan el suelo como se cuida a una familia. Cada paquete que llega a tus manos es el resultado de un proceso honesto, sin agroquímicos, sin atajos.</p>
+        <p>El mate siempre fue un ritual. Nosotros queremos que sea un ritual consciente.</p>
+        <div class="nosotros-stats">
+          <div class="stat"><span class="stat-numero">100%</span><span class="stat-label">Orgánico certificado</span></div>
+          <div class="stat"><span class="stat-numero">0</span><span class="stat-label">Aditivos o conservantes</span></div>
+          <div class="stat"><span class="stat-numero">❤️</span><span class="stat-label">Comercio justo</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="contacto" id="contacto">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-eyebrow">Hablemos</span>
+        <h2 class="section-title">¿Tenés alguna duda?</h2>
+        <p class="section-subtitle">Escribinos por WhatsApp o seguinos en Instagram. Respondemos rápido.</p>
+      </div>
+      <div class="contacto-acciones">
+        <a href="https://wa.me/5491100000000?text=Hola%20AWARE!%20Quiero%20consultar%20sobre%20sus%20productos" class="btn-contacto btn-wsp-grande" target="_blank" rel="noopener">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Escribinos por WhatsApp
+        </a>
+        <a href="https://www.instagram.com/awareyerbamate/" class="btn-contacto btn-instagram" target="_blank" rel="noopener">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          Seguinos en Instagram
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-logo">AWARE</div>
+      <p class="footer-tagline">Yerba Mate Orgánica · Hecho con consciencia</p>
+      <div class="footer-links">
+        <a href="#inicio">Inicio</a>
+        <a href="#productos">Productos</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+      <p class="footer-copy">© 2026 AWARE. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
