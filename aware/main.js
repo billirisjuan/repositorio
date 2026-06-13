@@ -1,7 +1,7 @@
 (function () {
   'use strict';
 
-  var WSP_NUMBER = '5491100000000'; // ← reemplazá con el número real de WhatsApp
+  var WSP_NUMBER = '542604821170';
 
   /* ── Navbar scroll ── */
   var navbar = document.getElementById('navbar');
