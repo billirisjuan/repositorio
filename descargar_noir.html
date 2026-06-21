@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Noir Studio — Descarga</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #000;
+      color: #fff;
+      font-family: 'Courier New', Courier, monospace;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1rem;
+    }
+
+    /* ── ASCII LOGO ── */
+    .logo {
+      font-size: clamp(0.45rem, 1.8vw, 0.85rem);
+      line-height: 1.2;
+      white-space: pre;
+      color: #fff;
+      font-weight: bold;
+      letter-spacing: 0;
+      text-align: left;
+    }
+
+    .studio-label {
+      text-align: center;
+      letter-spacing: 0.6em;
+      font-size: 0.75rem;
+      color: #666;
+      margin-top: 0.4rem;
+    }
+
+    .divider {
+      width: 100%;
+      max-width: 520px;
+      border: none;
+      border-top: 1px solid #333;
+      margin: 2rem 0;
+    }
+
+    /* ── CARD ── */
+    .card {
+      width: 100%;
+      max-width: 520px;
+      border: 1px solid #333;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .card h2 {
+      font-size: 0.7rem;
+      letter-spacing: 0.25em;
+      color: #666;
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+    }
+
+    .features {
+      list-style: none;
+      text-align: left;
+      margin-bottom: 2rem;
+    }
+
+    .features li {
+      font-size: 0.85rem;
+      color: #ccc;
+      padding: 0.4rem 0;
+      border-bottom: 1px solid #1a1a1a;
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+    }
+
+    .features li:last-child { border-bottom: none; }
+
+    .features li::before {
+      content: '─';
+      color: #555;
+      flex-shrink: 0;
+    }
+
+    /* ── BOTÓN ── */
+    .btn-download {
+      display: inline-block;
+      background: #fff;
+      color: #000;
+      text-decoration: none;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 0.85rem;
+      font-weight: bold;
+      letter-spacing: 0.15em;
+      padding: 0.85rem 2.5rem;
+      border: none;
+      cursor: pointer;
+      transition: background 0.15s, color 0.15s;
+      width: 100%;
+    }
+
+    .btn-download:hover {
+      background: #000;
+      color: #fff;
+      outline: 1px solid #fff;
+    }
+
+    /* ── INSTRUCCIONES ── */
+    .steps {
+      width: 100%;
+      max-width: 520px;
+      margin-top: 2rem;
+      border: 1px solid #222;
+      padding: 1.5rem 2rem;
+    }
+
+    .steps h3 {
+      font-size: 0.65rem;
+      letter-spacing: 0.25em;
+      color: #555;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+
+    .step {
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+      padding: 0.5rem 0;
+      border-bottom: 1px solid #111;
+    }
+
+    .step:last-child { border-bottom: none; }
+
+    .step-num {
+      font-size: 0.7rem;
+      color: #444;
+      flex-shrink: 0;
+      padding-top: 0.05rem;
+    }
+
+    .step-text {
+      font-size: 0.8rem;
+      color: #aaa;
+      line-height: 1.5;
+    }
+
+    .step-text code {
+      background: #111;
+      color: #fff;
+      padding: 0.1rem 0.4rem;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 0.78rem;
+      border: 1px solid #2a2a2a;
+    }
+
+    /* ── FOOTER ── */
+    .footer-note {
+      margin-top: 2.5rem;
+      font-size: 0.65rem;
+      color: #333;
+      letter-spacing: 0.1em;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <pre class="logo">  ███╗   ██╗ ██████╗ ██╗██████╗
+  ████╗  ██║██╔═══██╗██║██╔══██╗
+  ██╔██╗ ██║██║   ██║██║██████╔╝
+  ██║╚██╗██║██║   ██║██║██╔══██╗
+  ██║ ╚████║╚██████╔╝██║██║  ██║
+  ╚═╝  ╚═══╝ ╚═════╝ ╚═╝╚═╝  ╚═╝</pre>
+  <p class="studio-label">S T U D I O</p>
+
+  <hr class="divider" />
+
+  <div class="card">
+    <h2>Gestor de gastos para CMD</h2>
+    <ul class="features">
+      <li>Anotá gastos e ingresos con nombre y fecha</li>
+      <li>Elegí entre pesos argentinos o dólar blue</li>
+      <li>Cotización del dólar blue actualizada al día</li>
+      <li>Historial completo con balance total</li>
+      <li>Todo se guarda automáticamente en tu PC</li>
+      <li>Interfaz blanco y negro, sin instalación extra</li>
+    </ul>
+
+    <a class="btn-download" href="noir_studio.py" download="noir_studio.py">
+      [ DESCARGAR NOIR STUDIO ]
+    </a>
+  </div>
+
+  <div class="steps">
+    <h3>Cómo ejecutarlo</h3>
+
+    <div class="step">
+      <span class="step-num">01</span>
+      <span class="step-text">
+        Verificar que tenés Python instalado.<br>
+        Abrí CMD y escribí: <code>python --version</code>
+      </span>
+    </div>
+
+    <div class="step">
+      <span class="step-num">02</span>
+      <span class="step-text">
+        Guardá el archivo descargado en una carpeta de tu elección,<br>
+        por ejemplo: <code>C:\NoirStudio\</code>
+      </span>
+    </div>
+
+    <div class="step">
+      <span class="step-num">03</span>
+      <span class="step-text">
+        Abrí CMD en esa carpeta y ejecutá:<br>
+        <code>python noir_studio.py</code>
+      </span>
+    </div>
+
+    <div class="step">
+      <span class="step-num">04</span>
+      <span class="step-text">
+        Opcional — para abrir con doble clic, creá un archivo <code>abrir.bat</code>
+        en la misma carpeta con este contenido:<br><br>
+        <code>@echo off</code><br>
+        <code>cd /d "%~dp0"</code><br>
+        <code>python noir_studio.py</code><br>
+        <code>pause</code>
+      </span>
+    </div>
+  </div>
+
+  <p class="footer-note">noir studio · python 3.x · sin dependencias externas</p>
+
+  <script>
+    // Genera el archivo .py dinámicamente si el servidor no lo sirve
+    document.querySelector('.btn-download').addEventListener('click', function(e) {
+      // Solo actúa si el navegador no puede servir el .py directamente
+      // (útil si la página se abre desde file://)
+      const href = this.getAttribute('href');
+      fetch(href)
+        .then(r => { if (!r.ok) throw new Error(); })
+        .catch(() => {
+          e.preventDefault();
+          alert('Copiá el archivo noir_studio.py a la misma carpeta que esta página HTML.');
+        });
+    });
+  </script>
+
+</body>
+</html>
